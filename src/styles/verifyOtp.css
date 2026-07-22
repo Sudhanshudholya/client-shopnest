@@ -1,0 +1,94 @@
+.verify-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.verify-card {
+  width: 100%;
+  max-width: 430px;
+  background: #18181b;
+  border: 1px solid #27272a;
+  border-radius: 16px;
+  padding: 35px;
+  animation: fadeIn .4s ease;
+}
+
+.verify-card h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.verify-text {
+  text-align: center;
+  color: #a1a1aa;
+  font-size: 15px;
+}
+
+.verify-email {
+  text-align: center;
+  color: #f97316;
+  font-weight: 600;
+  margin: 12px 0 30px;
+  word-break: break-word;
+}
+
+.verify-label {
+  display: block;
+  margin-bottom: 8px;
+  color: #d4d4d8;
+  font-weight: 500;
+}
+
+.verify-input {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 1px solid #3f3f46;
+  background: #09090b;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 6px;
+  outline: none;
+  transition: .3s;
+}
+
+.verify-input:focus {
+  border-color: #f97316;
+  box-shadow: 0 0 0 3px rgba(249,115,22,.15);
+}
+
+.verify-btn {
+  width: 100%;
+  margin-top: 22px;
+}
+
+.resend-box {
+  margin-top: 22px;
+  text-align: center;
+  color: #a1a1aa;
+}
+
+.resend-btn {
+  background: none;
+  border: none;
+  color: #f97316;
+  cursor: pointer;
+  font-weight: 600;
+  margin-left: 6px;
+}
+
+.resend-btn:hover {
+  text-decoration: underline;
+}
+
+.verify-note {
+  margin-top: 30px;
+  text-align: center;
+  color: #71717a;
+  font-size: 13px;
+  line-height: 1.6;
+}

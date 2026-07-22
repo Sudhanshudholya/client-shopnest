@@ -1,0 +1,150 @@
+.admin-orders-container {
+  max-width: 1300px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #18181b;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,.08);
+  color: #fff;
+}
+
+.orders-title {
+  color: #f97316;
+  margin-bottom: 25px;
+}
+
+.orders-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.orders-table {
+  width: 100%;
+  min-width: 850px;
+  border-collapse: collapse;
+}
+
+.orders-table th,
+.orders-table td {
+  padding: 16px;
+  text-align: left;
+}
+
+.orders-table th {
+  color: #a1a1aa;
+  font-size: .9rem;
+  border-bottom: 1px solid rgba(255,255,255,.15);
+}
+
+.orders-table td {
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+.orders-table tr:hover {
+  background: rgba(255,255,255,.03);
+}
+
+.status-select {
+  background: #09090b;
+  color: white;
+  border: 1px solid #27272a;
+  border-radius: 6px;
+  padding: 8px 12px;
+  outline: none;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.status-select:focus {
+  border-color: #f97316;
+}
+
+/* ===========================
+   Desktop
+=========================== */
+
+@media (min-width:1200px){
+
+.admin-orders-container{
+max-width:1300px;
+}
+
+}
+
+/* ===========================
+   Laptop
+=========================== */
+
+@media (max-width:1024px){
+
+.admin-orders-container{
+margin:25px;
+padding:25px;
+}
+
+.orders-table{
+min-width:800px;
+}
+
+}
+
+/* ===========================
+   Tablet
+=========================== */
+
+@media (max-width:768px){
+
+.admin-orders-container{
+padding:20px;
+margin:15px;
+}
+
+.orders-title{
+text-align:center;
+font-size:28px;
+}
+
+.orders-table th,
+.orders-table td{
+padding:13px;
+font-size:14px;
+}
+
+.status-select{
+font-size:14px;
+padding:7px 10px;
+}
+
+}
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media (max-width:480px){
+
+.admin-orders-container{
+padding:15px;
+margin:10px;
+}
+
+.orders-title{
+font-size:22px;
+}
+
+.orders-table{
+min-width:700px;
+}
+
+.orders-table th,
+.orders-table td{
+padding:10px;
+font-size:13px;
+}
+
+.status-select{
+font-size:13px;
+padding:6px 8px;
+}
+
+}

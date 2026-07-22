@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #09090b;
+  color: #fafafa;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.main-content {
+  max-width: 1400px;
+  width: 100%;
+  min-height: 85vh;
+  margin: 0 auto;
+  padding: 40px 20px;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+}
+
+ul {
+  list-style: none;
+}
+
+/* =========================
+        BUTTONS
+========================= */
+
+.btn {
+  background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all .3s ease;
+  box-shadow: 0 4px 14px rgba(234, 88, 12, .3);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(234, 88, 12, .5);
+  filter: brightness(1.05);
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+/* =========================
+        HEADINGS
+========================= */
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 700;
+  letter-spacing: -.5px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+h2 {
+  font-size: clamp(1.7rem, 4vw, 2.2rem);
+  background: linear-gradient(to right, #ffffff, #a1a1aa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h3 {
+  font-size: clamp(1.3rem, 3vw, 1.7rem);
+}
+
+h4 {
+  font-size: clamp(1rem, 2vw, 1.3rem);
+}
+
+/* =========================
+        ANIMATION
+========================= */
+
+@keyframes fadeIn {
+
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+
+/* =========================
+        SCROLLBAR
+========================= */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #09090b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3f46;
+}
+
+/* =========================
+     LARGE DESKTOP
+========================= */
+
+@media (min-width:1600px){
+
+.main-content{
+max-width:1500px;
+padding:50px 30px;
+}
+
+}
+
+/* =========================
+        LAPTOP
+========================= */
+
+@media (max-width:1200px){
+
+.main-content{
+max-width:1100px;
+padding:35px 20px;
+}
+
+}
+
+/* =========================
+        TABLET
+========================= */
+
+@media (max-width:992px){
+
+.main-content{
+padding:30px 18px;
+min-height:80vh;
+}
+
+.btn{
+padding:12px 22px;
+font-size:15px;
+}
+
+}
+
+/* =========================
+      LARGE MOBILE
+========================= */
+
+@media (max-width:768px){
+
+.main-content{
+padding:25px 16px;
+}
+
+.btn{
+width:100%;
+padding:13px;
+font-size:15px;
+}
+
+}
+
+/* =========================
+        MOBILE
+========================= */
+
+@media (max-width:576px){
+
+.main-content{
+padding:20px 14px;
+}
+
+.btn{
+padding:12px;
+font-size:14px;
+border-radius:6px;
+}
+
+}
+
+/* =========================
+      SMALL MOBILE
+========================= */
+
+@media (max-width:400px){
+
+.main-content{
+padding:18px 10px;
+}
+
+.btn{
+font-size:13px;
+padding:11px;
+}
+
+body{
+font-size:14px;
+}
+
+}

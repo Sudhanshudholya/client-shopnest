@@ -1,0 +1,274 @@
+.profile-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 35px;
+  background: #18181b;
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: 16px;
+  animation: fadeIn .4s ease;
+}
+
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 25px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+.profile-title h2 {
+  margin-bottom: 15px;
+}
+
+.profile-title p {
+  color: #a1a1aa;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.profile-title strong {
+  color: #fff;
+}
+
+.profile-badge {
+  display: inline-block;
+  padding: 8px 15px;
+  border-radius: 8px;
+  background: rgba(249,115,22,.12);
+  color: #f97316;
+  font-weight: 600;
+  margin-top: 10px;
+}
+ 
+.logout-btn {
+  background: #ef4444;
+  box-shadow: none;
+}
+
+ .logout-btn:hover {
+  background: #dc2626;
+} 
+
+.order-heading {
+  color: #f97316;
+  margin-bottom: 25px;
+}
+
+.empty-orders {
+  background: #09090b;
+  border: 1px solid #27272a;
+  border-radius: 12px;
+  padding: 40px;
+  text-align: center;
+}
+
+.empty-orders p {
+  color: #a1a1aa;
+  margin-bottom: 20px;
+}
+
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.order-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  background: #09090b;
+  border: 1px solid #27272a;
+  border-radius: 12px;
+  padding: 22px;
+  transition: .3s;
+}
+
+.order-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(249,115,22,.3);
+}
+
+.order-info p {
+  color: #a1a1aa;
+  margin-bottom: 8px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.order-info span {
+  color: #fff;
+}
+
+.order-total {
+  color: #10b981 !important;
+  font-weight: 700;
+}
+
+.status {
+  padding: 9px 18px;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.status.pending {
+  background: rgba(245,158,11,.12);
+  color: #f59e0b;
+}
+
+.status.shipped {
+  background: rgba(59,130,246,.12);
+  color: #3b82f6;
+}
+
+.status.delivered {
+  background: rgba(16,185,129,.12);
+  color: #10b981;
+}
+
+/* ===========================
+   Large Desktop
+=========================== */
+
+@media (min-width:1400px){
+
+.profile-container{
+max-width:1200px;
+}
+
+}
+
+/* ===========================
+   Laptop
+=========================== */
+
+@media (max-width:1024px){
+
+.profile-container{
+padding:30px;
+}
+
+.profile-title h2{
+font-size:2rem;
+}
+
+}
+
+/* ===========================
+   Tablet
+=========================== */
+
+@media (max-width:768px){
+
+.profile-container{
+padding:25px;
+margin:25px 15px;
+}
+
+.profile-header{
+flex-direction:column;
+align-items:flex-start;
+}
+
+.logout-btn{
+width:100%;
+}
+
+.order-card{
+flex-direction:column;
+align-items:flex-start;
+}
+
+.status{
+width:fit-content;
+}
+
+}
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media (max-width:480px){
+
+.profile-container{
+padding:20px 15px;
+margin:15px 10px;
+border-radius:12px;
+}
+
+.profile-title h2{
+font-size:1.8rem;
+text-align:center;
+}
+
+.profile-title{
+width:100%;
+}
+
+.profile-title p{
+font-size:14px;
+word-break:break-word;
+}
+
+.profile-badge{
+font-size:13px;
+padding:7px 12px;
+}
+
+.logout-btn{
+padding:12px;
+font-size:15px;
+}
+
+.order-heading{
+font-size:1.4rem;
+}
+
+.order-card{
+padding:16px;
+}
+
+.order-info p{
+font-size:14px;
+}
+
+.status{
+font-size:13px;
+padding:8px 15px;
+}
+
+.empty-orders{
+padding:25px 15px;
+}
+
+}
+
+/* ===========================
+   Small Phones
+=========================== */
+
+@media (max-width:360px){
+
+.profile-title h2{
+font-size:1.5rem;
+}
+
+.profile-title p{
+font-size:13px;
+}
+
+.order-info p{
+font-size:13px;
+}
+
+.status{
+font-size:12px;
+padding:7px 12px;
+}
+
+}

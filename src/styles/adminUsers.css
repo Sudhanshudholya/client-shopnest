@@ -1,0 +1,155 @@
+.admin-users-container {
+  max-width: 1300px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #18181b;
+  color: #fff;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,.08);
+}
+
+.users-title {
+  color: #f97316;
+  margin-bottom: 25px;
+}
+
+.users-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.users-table {
+  width: 100%;
+  min-width: 900px;
+  border-collapse: collapse;
+}
+
+.users-table th,
+.users-table td {
+  padding: 16px;
+  text-align: left;
+}
+
+.users-table th {
+  color: #a1a1aa;
+  font-size: .9rem;
+  border-bottom: 1px solid rgba(255,255,255,.15);
+}
+
+.users-table td {
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+.users-table tr:hover {
+  background: rgba(255,255,255,.03);
+}
+
+/* Role Badge */
+
+.role-badge {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: .85rem;
+  font-weight: 600;
+}
+
+.admin-role {
+  background: rgba(249,115,22,.18);
+  color: #f97316;
+}
+
+.user-role {
+  background: rgba(16,185,129,.18);
+  color: #10b981;
+}
+
+/* ==========================
+   Desktop
+========================== */
+
+@media (min-width:1200px){
+
+.admin-users-container{
+max-width:1300px;
+}
+
+}
+
+/* ==========================
+   Laptop
+========================== */
+
+@media (max-width:1024px){
+
+.admin-users-container{
+margin:25px;
+padding:25px;
+}
+
+.users-table{
+min-width:850px;
+}
+
+}
+
+/* ==========================
+   Tablet
+========================== */
+
+@media (max-width:768px){
+
+.admin-users-container{
+margin:15px;
+padding:20px;
+}
+
+.users-title{
+text-align:center;
+font-size:28px;
+}
+
+.users-table th,
+.users-table td{
+padding:13px;
+font-size:14px;
+}
+
+.role-badge{
+font-size:13px;
+padding:4px 8px;
+}
+
+}
+
+/* ==========================
+   Mobile
+========================== */
+
+@media (max-width:480px){
+
+.admin-users-container{
+margin:10px;
+padding:15px;
+}
+
+.users-title{
+font-size:22px;
+}
+
+.users-table{
+min-width:700px;
+}
+
+.users-table th,
+.users-table td{
+padding:10px;
+font-size:13px;
+}
+
+.role-badge{
+font-size:12px;
+padding:4px 7px;
+}
+
+}

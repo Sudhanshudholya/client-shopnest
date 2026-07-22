@@ -1,0 +1,268 @@
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  padding: 20px;
+}
+
+.auth-form {
+  background: #18181b;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  position: relative;
+  overflow: hidden;
+}
+
+.auth-form::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 200%;
+  height: 4px;
+  background: linear-gradient(90deg, transparent, #f97316, transparent);
+  animation: shimmer 3s infinite linear;
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(50%);
+  }
+}
+
+.auth-form h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.auth-form input {
+  padding: 15px;
+  background: #09090b;
+  border: 1px solid #27272a;
+  border-radius: 8px;
+  font-size: 15px;
+  color: #fff;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.auth-form input:focus {
+  border-color: #f97316;
+  box-shadow: 0 0 0 2px rgba(249, 115, 22, 0.2);
+}
+
+.auth-form p {
+  text-align: center;
+  margin-top: 15px;
+  color: #a1a1aa;
+  font-size: 15px;
+}
+
+.auth-form a {
+  color: #f97316;
+  font-weight: 600;
+}
+
+.auth-form a:hover {
+  text-decoration: underline;
+}
+
+.auth-options {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -5px;
+  margin-bottom: 10px;
+}
+
+.forgot-link {
+  font-size: 13px;
+  color: #f97316;
+  text-decoration: none;
+}
+
+.forgot-link:hover {
+  text-decoration: underline;
+}
+
+.auth-text {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* ===========================
+   Large Desktop (1440px+)
+=========================== */
+
+@media (min-width: 1440px) {
+  .auth-form {
+    max-width: 460px;
+    padding: 45px;
+  }
+
+  .auth-form h2 {
+    font-size: 2.2rem;
+  }
+}
+
+/* ===========================
+   Laptop (1024px - 1439px)
+=========================== */
+
+@media (max-width: 1200px) {
+  .auth-form {
+    max-width: 420px;
+  }
+}
+
+/* ===========================
+   Tablet (768px - 1023px)
+=========================== */
+
+@media (max-width: 992px) {
+  .auth-container {
+    min-height: 75vh;
+    padding: 30px 20px;
+  }
+
+  .auth-form {
+    max-width: 430px;
+    padding: 35px;
+  }
+
+  .auth-form h2 {
+    font-size: 1.8rem;
+  }
+}
+
+/* ===========================
+   Mobile (576px - 767px)
+=========================== */
+
+@media (max-width: 768px) {
+  .auth-container {
+    padding: 20px 15px;
+    min-height: 80vh;
+  }
+
+  .auth-form {
+    padding: 30px 25px;
+    border-radius: 14px;
+    gap: 18px;
+  }
+
+  .auth-form h2 {
+    font-size: 1.7rem;
+  }
+
+  .auth-form input {
+    padding: 14px;
+    font-size: 14px;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 14px;
+  }
+}
+
+/* ===========================
+   Small Mobile (480px)
+=========================== */
+
+@media (max-width: 480px) {
+  .auth-container {
+    padding: 15px 10px;
+  }
+
+  .auth-form {
+    padding: 25px 20px;
+    border-radius: 12px;
+    gap: 16px;
+  }
+
+  .auth-form h2 {
+    font-size: 1.5rem;
+  }
+
+  .auth-form input {
+    padding: 13px;
+    font-size: 14px;
+  }
+
+  .auth-form p {
+    font-size: 14px;
+  }
+
+  .btn {
+    padding: 13px;
+    font-size: 14px;
+  }
+}
+
+/* ===========================
+   Extra Small Devices (360px)
+=========================== */
+
+@media (max-width: 360px) {
+  .auth-form {
+    padding: 20px 16px;
+  }
+
+  .auth-form h2 {
+    font-size: 1.35rem;
+  }
+
+  .auth-form input {
+    padding: 12px;
+    font-size: 13px;
+  }
+
+  .auth-form p {
+    font-size: 13px;
+  }
+
+  .btn {
+    font-size: 13px;
+    padding: 12px;
+  }
+}
+
+.password-field {
+  position: relative;
+  width: 100%;
+}
+
+.password-field input {
+  width: 100%;
+  padding-right: 45px;
+}
+
+.password-icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #777;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.password-icon:hover {
+  color: #333;
+}

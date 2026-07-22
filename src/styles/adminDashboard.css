@@ -1,0 +1,189 @@
+.dashboard-container {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+.dashboard-header {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 35px;
+}
+
+.dashboard-logo {
+  width: 55px;
+  height: 55px;
+  border-radius: 10px;
+  object-fit: cover;
+  filter: drop-shadow(0 0 12px rgba(249,115,22,.35));
+}
+
+.dashboard-header h2 {
+  margin: 0;
+  color: #fff;
+}
+
+.dashboard-header p {
+  margin-top: 8px;
+  color: #a1a1aa;
+  font-size: 16px;
+}
+
+.dashboard-header span {
+  color: #fff;
+  font-weight: 600;
+}
+
+.dashboard-cards {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 20px;
+}
+
+.dashboard-card {
+  background: #18181b;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,.08);
+  padding: 28px;
+  text-align: center;
+  transition: .3s;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px);
+}
+
+.dashboard-card h4 {
+  color: #a1a1aa;
+  margin-bottom: 15px;
+}
+
+.dashboard-number {
+  font-size: 2.4rem;
+  color: #f97316;
+  font-weight: bold;
+}
+
+.loading-text {
+  text-align: center;
+  color: #f97316;
+  font-size: 20px;
+  padding: 60px 0;
+}
+
+.admin-controls {
+  margin-top: 40px;
+  background: #18181b;
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 12px;
+  padding: 30px;
+}
+
+.admin-controls h3 {
+  color: #f97316;
+  margin-bottom: 25px;
+}
+
+.control-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.secondary-btn {
+  background: #3f3f46;
+}
+
+/* ---------- Laptop ---------- */
+
+@media (max-width:1024px){
+
+.dashboard-cards{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+/* ---------- Tablet ---------- */
+
+@media (max-width:768px){
+
+.dashboard-container{
+padding:15px;
+}
+
+.dashboard-header{
+flex-direction:column;
+text-align:center;
+}
+
+.dashboard-cards{
+grid-template-columns:1fr 1fr;
+gap:15px;
+}
+
+.dashboard-card{
+padding:22px;
+}
+
+.control-buttons{
+justify-content:center;
+}
+
+.control-buttons .btn{
+width:100%;
+}
+
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width:480px){
+
+.dashboard-container{
+padding:10px;
+}
+
+.dashboard-logo{
+width:45px;
+height:45px;
+}
+
+.dashboard-header h2{
+font-size:24px;
+}
+
+.dashboard-header p{
+font-size:14px;
+}
+
+.dashboard-cards{
+grid-template-columns:1fr;
+}
+
+.dashboard-number{
+font-size:2rem;
+}
+
+.dashboard-card{
+padding:18px;
+}
+
+.admin-controls{
+padding:20px;
+}
+
+.admin-controls h3{
+text-align:center;
+}
+
+.control-buttons{
+flex-direction:column;
+}
+
+.control-buttons .btn{
+width:100%;
+}
+
+}

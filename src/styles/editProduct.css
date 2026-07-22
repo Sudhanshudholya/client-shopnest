@@ -1,0 +1,151 @@
+.edit-product-container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.edit-product-card {
+  background: #18181b;
+  border: 1px solid rgba(255, 255, 255, .08);
+  border-radius: 12px;
+  padding: 35px;
+}
+
+.edit-product-card h2 {
+  text-align: center;
+  color: #f97316;
+  margin-bottom: 25px;
+}
+
+.edit-product-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.edit-product-form input,
+.edit-product-form textarea {
+  width: 100%;
+  padding: 13px 15px;
+  background: #09090b;
+  color: white;
+  border: 1px solid #27272a;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  transition: .3s;
+  box-sizing: border-box;
+}
+
+.edit-product-form input:focus,
+.edit-product-form textarea:focus {
+  border-color: #f97316;
+}
+
+.edit-product-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.image-upload-box {
+  border: 2px dashed #f97316;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.image-upload-box label {
+  display: block;
+  margin-bottom: 12px;
+  color: #a1a1aa;
+}
+
+.image-upload-box input[type="file"] {
+  background: transparent;
+  border: none;
+  color: white;
+  padding: 0;
+}
+
+.update-product-btn {
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background: #f97316;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.update-product-btn:hover:not(:disabled) {
+  background: #ea580c;
+}
+
+.update-product-btn:disabled {
+  opacity: .7;
+  cursor: not-allowed;
+}
+
+/* Laptop */
+
+@media (max-width:1024px){
+
+.edit-product-container{
+max-width:90%;
+}
+
+}
+
+/* Tablet */
+
+@media (max-width:768px){
+
+.edit-product-container{
+padding:15px;
+margin:25px auto;
+}
+
+.edit-product-card{
+padding:25px;
+}
+
+.edit-product-card h2{
+font-size:28px;
+}
+
+}
+
+/* Mobile */
+
+@media (max-width:480px){
+
+.edit-product-container{
+padding:10px;
+margin:15px auto;
+}
+
+.edit-product-card{
+padding:18px;
+}
+
+.edit-product-card h2{
+font-size:22px;
+}
+
+.edit-product-form input,
+.edit-product-form textarea{
+font-size:14px;
+padding:12px;
+}
+
+.image-upload-box{
+padding:15px;
+}
+
+.update-product-btn{
+font-size:15px;
+padding:13px;
+}
+
+}
